@@ -13,5 +13,15 @@ Extensive experiments are conducted on two popular video summarization datasets,
 and AAVS approaches consistently outperform the state-of-the-art ones by at least 0.8%, 3.1%on SumMe and TVSum datasets, respectively. 
 These promising results verify the effectiveness of the proposed AVS framework.
 
+# Model we used
+The framework consists of two components: an encoder-decoder model and a keyshot selection model. The encoder-decoder part measures the importance of each frame. The key shots selection model helps us to convert frame-level importance scores into shot-level scores and generating summary accounting to the threshold budget which we specify.
 
-Research paper used for project= https://www.researchgate.net/publication/319415984_Video_Summarization_With_Attention-Based_Encoder-Decoder_Networks
+More details of the model can be known by skimming through the code.
+
+# generated output summary
+To generate the summary of a video, run
+
+ python gen_summary.py --h5_path --json_path --data_root --save_dir --bar
+
+Research paper used for project:  https://www.researchgate.net/publication/319415984_Video_Summarization_With_Attention-Based_Encoder-Decoder_Networks
+the github main contributor for project: https://github.com/yashkolli
