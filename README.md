@@ -24,4 +24,5 @@ To generate the summary of a video, run
  python gen_summary.py --h5_path --json_path --data_root --save_dir --bar
 
 Research paper used for project:  https://www.researchgate.net/publication/319415984_Video_Summarization_With_Attention-Based_Encoder-Decoder_Networks
+
 the github main contributor for project: https://github.com/yashkolli
